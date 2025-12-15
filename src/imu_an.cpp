@@ -11,6 +11,7 @@
 #include "gyr_lib/fitallan_gyr.h"
 #include <code_utils/ros_utils.h>
 #include <geometry_msgs/Vector3Stamped.h>
+#include <fstream>
 #include <iostream>
 #include <mutex>
 #include <opencv2/opencv.hpp>

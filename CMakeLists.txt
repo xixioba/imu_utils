@@ -3,7 +3,7 @@ project(imu_utils)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++17")
 #-DEIGEN_USE_MKL_ALL")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g -fPIC")
 
@@ -24,9 +24,8 @@ find_package(OpenCV REQUIRED)
 find_package(Ceres REQUIRED)
 find_package(Eigen3  REQUIRED)
 include_directories(
-  ${catkin_INCLUDE_DIRS}
   ${CERES_INCLUDE_DIRS}
-  ${EIGEN3_INCLUDE_DIR}
+  ${catkin_INCLUDE_DIRS}
 )
 
 catkin_package()
